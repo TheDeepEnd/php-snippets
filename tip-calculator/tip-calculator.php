@@ -17,7 +17,7 @@
         || (!is_numeric($percentage) && $percentage != NULL))
     {
       /* Sets an $error variable for a message to display on an invalid input */
-      $error = "<font color='red'>Invalid Input</font>";
+      $error = "<font color='red'>Invalid, try again!</font>";
     }
     else
     {
