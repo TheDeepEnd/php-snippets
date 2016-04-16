@@ -22,13 +22,15 @@
     else
     {
       /* Calculates the tip based on bill and parameter */
-      /* Then prepends a '$' for the output */
       $tip = $bill * $percentage / 100;
-      $tip = "$" . $tip;
 
       /* Calculates the total cost based on bill and tip */
-      /* Then prepends a '$' for the output */
       $total = $bill + $tip;
+
+      /* Then prepends a '$' for the output */
+      $tip = "$" . $tip;
+
+      /* Then prepends a '$' for the output */
       $total = "$" . $total;
     }
 
