@@ -48,7 +48,7 @@
           Bill before tip:
         </td>
         <td>
-          <input type="text" name="bill" value="0.00">
+          <input type="text" name="bill" value="<? echo $bill; ?>">
         </td>
       </tr>
       <tr>
@@ -56,7 +56,7 @@
           Percent Tip:
         </td>
         <td>
-          <input type="text" name="percentage" value="0">
+          <input type="text" name="percentage" value="<? echo $percentage; ?>">
         </td>
       </tr>
       <tr>
