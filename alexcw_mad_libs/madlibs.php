@@ -1,10 +1,16 @@
 <?php
 
-
+/*
+* A template string for the madlib
+* The things between "++ ++"'s will be replaced by the input.
+*/
 $templateString = "Hi I'm ++name++! ++noun2++ is ++adjective1++
 and ++noun1++ is ++adjective2++! ++noun2++ ++verb2++ the ++adjective3++
 ++noun3++! The end, also ++verb1++!";
 
+/*
+* So that nothing will be shown when loading the page for the first time.
+*/
 if ($_GET == NULL)
 {
 
@@ -12,6 +18,10 @@ if ($_GET == NULL)
 
 }
 else {
+  /*
+  * Iterates over $_GET, replacing the ++key++'s with the user input
+  * using str_replace.
+  */
   foreach($_GET as $key => $value)
   {
 
